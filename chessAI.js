@@ -1095,7 +1095,10 @@ function translateDoMove(move){
         stop: translateMyPosition(move.getNewX(), move.getNewY())
     }
 }
-
+function valid(x,y){
+    if(x>7||x<0||y>7||y<0) return false;
+    return true;
+}
 
 
 
